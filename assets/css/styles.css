@@ -7,12 +7,20 @@
  
 
 .contenedor{
+
+    background: linear-gradient(to right, rgba(255,255,255,1),rgba(175,239,255,1),rgba(242,183,255,1)); 
+
+    /*añadí degradado al body y al navbar*/
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:"header header"
                         "caroimg1 texto"
                         "mininav footer";
+
+                        
+                        
     
                                
 }
@@ -24,6 +32,8 @@
 .section1{
     display: flex;
     grid-area: texto;
+    margin: 100px 50px 0px 0px;
+   
 }
 
 .caro{
@@ -45,7 +55,10 @@ body{
 
 
 .titulo{
-   
+
+    /*también en el título*/
+
+    background: linear-gradient(to right, rgba(255,255,255,1),rgba(175,239,255,1),rgba(242,183,255,1)); 
     grid-area: header;
     display:flex;
     justify-content: center;
@@ -59,11 +72,15 @@ body{
     position: absolute;
     left: 30%;
     top: 5%;
+    border: 1px solid #000000;
+    
 }
 
 
 
 .navbar{
+    background: linear-gradient(90deg, rgba(173,78,231,1) 0%, rgba(226,226,226,1) 50%, rgba(105,41,255,1) 100%);
+    /*para el navbar usé uno diferente*/
     
     display: flex;
     width: fit-content;
@@ -72,6 +89,7 @@ body{
     position: absolute;
     left: 40%;
     top: 8%;
+    border: 1px solid #000000;
     
    
 }
@@ -85,6 +103,7 @@ body{
 .navbar ul li {
     display: inline-block;
     padding: 12px;
+
     
 }
 
@@ -100,6 +119,10 @@ a:hover{
 }
 
 
+
+h3{
+
+}
 
 img{
     display: flex;
